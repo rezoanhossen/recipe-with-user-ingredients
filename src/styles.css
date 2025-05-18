@@ -1,0 +1,136 @@
+/* Base Reset & Typography */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+/* App Background */
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("https://i.pinimg.com/originals/27/12/22/27122204d43e88725018ff4ebec3e260.gif");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Dark Overlay for Contrast */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}
+
+/* Main Content Styling */
+.content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 700px;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.15);
+  backdrop-filter: blur(8px);
+}
+
+/* Inputs */
+input[type="text"],
+input[type="file"] {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+/* Buttons */
+button {
+  background-color: #ffc107;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 0.5rem 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #e0a800;
+}
+
+/* Recipe List */
+.recipe-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Individual Recipe Card */
+.recipe-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.4);
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.recipe-card:hover {
+  transform: scale(1.02);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+}
+
+.recipe-info h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #ffdd57;
+}
+
+.recipe-info a {
+  color: #87cefa;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.recipe-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .content {
+    padding: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
