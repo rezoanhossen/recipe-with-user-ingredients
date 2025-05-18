@@ -1,0 +1,4 @@
+step1- npm install (in terminal) in root folder 
+step2- cd server (terminal 2)
+step3- python server.py (terminal 2)
+step4- npm start (terminal 3)
