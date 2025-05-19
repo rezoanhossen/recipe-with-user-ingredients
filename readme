@@ -1,3 +1,6 @@
+
+create new react app- create-react-app yourapp_in_small_letter
+copy and paste whole file to your newly created app
 step1- npm install (in terminal) in root folder 
 step2- cd server (terminal 2)
 step3- python server.py (terminal 2)
